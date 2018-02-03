@@ -14,13 +14,54 @@
 import turtle 	#imports turtle graphics for use
 wn = turtle.Screen() 	#creates new window entitled thomas
 thomas = turtle.Turtle()
+thomas.penup()
 
 # Background of thomas
-thomas.penup()
-thomas.goto(-40,-40)
+thomas.goto(-30,-30)
 thomas.pendown()
-for i in range(0,4):
-	thomas.forward(80)
-	thomas.right(90)
-	thomas.fillcolor("aqua")
+thomas.fillcolor("aqua")
+thomas.begin_fill()
+for i in range(0,2):
+	thomas.forward(60)
+	thomas.left(90)
+	thomas.forward(90)
+	thomas.left(90)
+thomas.end_fill()
+thomas.penup()
 
+# Background 2 of thomas
+thomas.goto(-40,0)
+thomas.pendown()
+thomas.fillcolor("aqua")
+thomas.begin_fill()
+for i in range (0,2):
+	thomas.forward(80)
+	thomas.left(90)
+	thomas.forward(30)
+	thomas.left(90)
+thomas.end_fill()
+thomas.penup()
+
+# Bottom rail thing
+thomas.goto(-50,-40)
+thomas.pendown()
+thomas.fillcolor("lightgrey")
+thomas.begin_fill()
+for i in range (0,2)
+	thomas.forward(100)
+	thomas.left(90)
+	thomas.forward(10)
+	thomas.left(90)
+thomas.end_fill()
+thomas.penup()
+
+# Even more bottom rail thing
+thomas.goto(-60,-60)
+thomas.pendown()
+thomas.fillcolor("red")
+thomas.begin_fill()
+for i in range (0,2)
+	thomas.foward(120)
+	thomas.left(90)
+	thomas.forward(20)
+	thomas.left(90)
