@@ -13,6 +13,7 @@
 
 import turtle 	#imports turtle graphics for use
 wn = thomas.Screen() 	#creates new window entitled thomas
+thomas = turtle.Turtle()
 setup(width = 200, height = 200, startx = None, starty = None)	  #adjusts window size
 
 # Background of thomas
