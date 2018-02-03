@@ -104,6 +104,7 @@ thomas.end_fill()
 thomas.penup()
 
 # Pipe
+thomas.setheading(0)
 thomas.goto(-5,30)
 thomas.pendown()
 thomas.fillcolor("black")
