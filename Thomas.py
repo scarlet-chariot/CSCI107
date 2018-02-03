@@ -65,3 +65,5 @@ for i in range (0,2):
 	thomas.left(90)
 	thomas.forward(20)
 	thomas.left(90)
+thomas.end_fill()
+thomas.penup()
