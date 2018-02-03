@@ -116,3 +116,15 @@ for i in range(0,2):
 	thomas.lt(90)
 thomas.end_fill()
 thomas.penup()
+
+# Pipe hat
+thomas.goto(-8,70)
+thomas.pendown()
+thomas.fillcolor("black")
+thomas.begin_fill()
+for i in range(0,3):
+	thomas.fd(16)
+	thomas.lt(120)
+thomas.end_fill()
+thomas.penup()
+
