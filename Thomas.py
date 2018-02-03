@@ -103,3 +103,15 @@ thomas.forward(46.1)
 thomas.end_fill()
 thomas.penup()
 
+# Pipe
+thomas.goto(-5,30)
+thomas.pendown()
+thomas.fillcolor("black")
+thomas.begin_fill()
+for i in range(0,2):
+	thomas.fd(10)
+	thomas.lt(90)
+	thomas.fd(40)
+	thomas.lt(90)
+thomas.end_fill()
+thomas.penup()
