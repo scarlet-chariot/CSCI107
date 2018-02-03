@@ -61,7 +61,7 @@ thomas.pendown()
 thomas.fillcolor("red")
 thomas.begin_fill()
 for i in range (0,2):
-	thomas.foward(120)
+	thomas.forward(120)
 	thomas.left(90)
 	thomas.forward(20)
 	thomas.left(90)
