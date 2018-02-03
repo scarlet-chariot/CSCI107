@@ -24,7 +24,7 @@ thomas.begin_fill()
 for i in range(0,2):
 	thomas.forward(60)
 	thomas.left(90)
-	thomas.forward(90)
+	thomas.forward(80)
 	thomas.left(90)
 thomas.end_fill()
 thomas.penup()
@@ -87,6 +87,19 @@ thomas.begin_fill()
 for i in range (0,8):
 	thomas.forward(5)
 	thomas.left(45)
+thomas.end_fill()
+thomas.penup()
+
+# Hat
+thomas.goto(-45,50)
+thomas.pendown()
+thomas.fillcolor("black")
+thomas.begin_fill()
+thomas.forward(90)
+thomas.left(167.5)
+thomas.forward(46.1)
+thomas.left(25)
+thomas.forward(46.1)
 thomas.end_fill()
 thomas.penup()
 
