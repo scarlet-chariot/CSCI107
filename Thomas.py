@@ -22,5 +22,5 @@ thomas.pendown()
 for i in range(0,4):
 	thomas.forward(80)
 	thomas.right(90)
-	thomas.fillcolor(
+	thomas.fillcolor(aqua)
 
