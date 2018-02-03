@@ -67,3 +67,26 @@ for i in range (0,2):
 	thomas.left(90)
 thomas.end_fill()
 thomas.penup()
+
+# Left Wheel
+thomas.goto(-40,-70)
+thomas.pendown()
+thomas.fillcolor("black")
+thomas.begin_fill()
+for i in range (0,8):
+	thomas.forward(50)
+	thomas.left(45)
+thomas.end_fill()
+thomas.penup()
+
+# Right Wheel
+thomas.goto(40,-70)
+thomas.pendown()
+thomas.fillcolor("black")
+thomas.begin_fill()
+for i in range (0,8):
+	thomas.forward(50)
+	thomas.left(45)
+thomas.end_fill()
+thomas.penup()
+
