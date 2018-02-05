@@ -128,3 +128,8 @@ for i in range(0,3):
 thomas.end_fill()
 thomas.penup()
 
+# Dot Freckle thing
+thomas.goto(
+thomas.pendown()
+thomas.fillcolor(
+thomas.begin_fill()
