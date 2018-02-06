@@ -14,6 +14,7 @@
 import turtle 	#imports turtle graphics for use
 wn = turtle.Screen() 	#creates new window entitled thomas
 thomas = turtle.Turtle()
+thomas.speed(0) 		#Sets turtle speed to fastest (0)
 thomas.penup()
 
 # Background of thomas
@@ -128,8 +129,123 @@ for i in range(0,3):
 thomas.end_fill()
 thomas.penup()
 
-# Dot Freckle thing
-thomas.goto(
+# Left Dot Freckle thing
+thomas.goto(-30,40)
 thomas.pendown()
-thomas.fillcolor(
+thomas.fillcolor("black")
 thomas.begin_fill()
+for i in range(0,8):
+	thomas.lt(45)
+	thomas.fd(5)
+thomas.end_fill()
+thomas.penup()
+
+# Right Dot Freckle thing
+thomas.setheading(0)
+thomas.goto(30,40)
+thomas.pendown()
+thomas.fillcolor("black")
+thomas.begin_fill()
+for i in range(0,8):
+	thomas.lt(45)
+	thomas.fd(5)
+thomas.end_fill()
+thomas.penup()
+
+# Left Inner Dot Freckle thing
+thomas.setheading(0)
+thomas.goto(-30,45)
+thomas.pendown()
+thomas.fillcolor("yellow")
+thomas.begin_fill()
+for i in range(0,8):
+	thomas.lt(45)
+	thomas.fd(5)
+thomas.end_fill()
+thomas.penup()
+
+# Right Inner Dot Freckle thing
+thomas.setheading(0)
+thomas.goto(30,45)
+thomas.pendown()
+thomas.fillcolor("yellow")
+thomas.begin_fill()
+for i in range(0,8):
+	thomas.lt(45)
+	thomas.fd(5)
+thomas.end_fill()
+thomas.penup()
+
+# Face
+thomas.setheading(0)
+thomas.goto(0,-10)
+thomas.pendown()
+thomas.fillcolor("lightgrey")
+thomas.begin_fill()
+for i in range(0,10):
+	thomas.fd(15)
+	thomas.lt(36)
+thomas.end_fill()
+thomas.penup()
+
+# Left Sclera
+thomas.setheading(0)
+thomas.goto(-10,15)
+thomas.pendown()
+thomas.fillcolor("white")
+thomas.begin_fill()
+for i in range (0,10):
+	thomas.fd(15)
+	thomas.lt(36)
+thomas.end_fill()
+thomas.penup()
+
+# Right Sclera
+thomas.setheading(0)
+thomas.goto(10,15)
+thomas.pendown()
+thomas.fillcolor("white")
+thomas.begin_fill()
+for i in range (0,10):
+	thomas.fd(15)
+	thomas.lt(36)
+thomas.end_fill()
+thomas.penup()
+
+# Left Pupil
+thomas.setheading(0)
+thomas.goto(-10,17)
+thomas.pendown()
+thomas.fillcolor("black")
+thomas.begin_fill()
+thomas.circle(2)
+thomas.end_fill()
+thomas.penup()
+
+# Right Pupil
+thomas.setheading(0)
+thomas.goto(-10,17)
+thomas.pendown()
+thomas.fillcolor("black")
+thomas.begin_fill()
+thomas.circle(2)
+thomas.end_fill()
+thomas.penup()
+
+# Nose
+thomas.setheading(0)
+thomas.goto(-2,25)
+thomas.pendown()
+for i in range(0,9):
+	thomas.lt(36)
+	thomas.fd(3)
+thomas.penup()
+
+# Smile
+thomas.goto(0,5)
+thomas.pendown()
+thomas.circle(5,180)
+
+# Finishes
+thomas.ht()
+thomas.exitonclick()
