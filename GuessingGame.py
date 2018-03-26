@@ -13,20 +13,24 @@
 import turtle
 import random
 
-turtle= turtle.Turtle()
+t= turtle.Turtle()
 screen= turtle.Screen()
 screen.setworldcoordinates(0,0,400,400)
+t.speed(0)
 
 # fucntions
 def draw_dot(x,y,color):
-	turtle.penup()
-	turtle.goto(x,y)
-	turtle.pendown()
-	turtle.dot(10,color)
+	t.penup()
+	t.goto(x,y)
+	t.pendown()
+	t.dot(10,color)
 
 #------------------------------------------------
 n= random.randint(50,201)
-c= 0
+
+#print(n) # for debugging purposes
+c= 1
+#print(c) # for debugging purposes
 while c != n:
 	x= random.randint(5,396)
 	y= random.randint(5,396)
