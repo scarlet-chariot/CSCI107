@@ -30,13 +30,15 @@ n= random.randint(50,201)
 
 #print(n) # for debugging purposes
 c= 1
-#print(c) # for debugging purposes
 while c != n:
 	x= random.randint(5,396)
 	y= random.randint(5,396)
 	color= random.choice(["red","blue","yellow","orange","green","purple"])
 	draw_dot(x,y,color)
 	c= c + 1
+
+#print(c) # for debugging purposes
+
 a= int(input("How many dots are on the screen: "))
 b= 1
 while a != n:
