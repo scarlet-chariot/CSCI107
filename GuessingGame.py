@@ -26,13 +26,13 @@ def draw_dot(x,y,color):
 	t.dot(10,color)
 
 #------------------------------------------------
-n= random.randint(50,201)
+n= random.randint(50,200)
 
 #print(n) # for debugging purposes
 c= 1
 while c != n:
-	x= random.randint(5,396)
-	y= random.randint(5,396)
+	x= random.randint(5,395)
+	y= random.randint(5,395)
 	color= random.choice(["red","blue","yellow","orange","green","purple"])
 	draw_dot(x,y,color)
 	c= c + 1
