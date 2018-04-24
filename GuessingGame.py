@@ -54,3 +54,4 @@ while a != n:
 		print("Your guess is out of the range, 50 and 200. Try again.")
 		a= int(input("How many dots are on the screen: "))
 print("The number of guesses you took was", str(b))
+t.hideturtle()
